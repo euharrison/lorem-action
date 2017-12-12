@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Goffipsum</title>
+  <link rel="stylesheet" type="text/css" href="./style.css"/>
+</head>
+<body>
+
+  <h1>Goffipsum</h1>
+
+  <p>Words count: <input type="number" id="words" value="100" min="5"></p>
+  <p><button id="generate">Generate</button></p>
+  <p id="content"></p>
+
+  <script type="text/javascript" src="./generator.js"></script>
+  <script type="text/javascript">
+
+    var loremIpsum = new LoremIpsum();
+    var words = document.getElementById('words');
+    var content = document.getElementById('content');
+
+    document.getElementById('generate').addEventListener('click', function() {
+      var text = loremIpsum.generate(words.value);
+      content.textContent = text;
+    })
+  </script>
+</body>
+</html>
