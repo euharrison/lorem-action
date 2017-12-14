@@ -29,10 +29,10 @@ LoremIpsum.WORDS = [
 ]
 
 var loremIpsum = new LoremIpsum();
-var words = document.getElementById('words');
+var amount = document.getElementById('amount');
 var content = document.getElementById('content');
 
 document.getElementById('generate').addEventListener('click', function() {
-  var text = loremIpsum.generate(words.value);
+  var text = loremIpsum.generate(amount.value);
   content.textContent = text;
 });

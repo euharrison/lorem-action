@@ -1,4 +1,55 @@
 body {
-	font-family: sans-serif;
+	margin: 0;
+	min-height: 100vh;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	background-image: url('./background.jpg');
+	background-position: left 15% center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.container {
+	background: rgba(255, 255, 255, 0.9);
+	min-height: 100vh;
+	box-sizing: border-box;
 	padding: 50px;
 }
+
+.amount {
+	outline: none;
+	font-size: 14px;
+	width: 40px;
+	padding: 2px 5px;
+	background-color: white;
+	border: 1px solid black;
+}
+
+.generate {
+	outline: none;
+	border: none;
+	cursor: pointer;
+	background-color: black;
+	padding: 15px 20px;
+	color: white;
+	font-size: 14px;
+}
+
+.generate:hover {
+	color: white;
+}
+
+.content {
+	margin-top: 40px;
+}
+
+@media (min-width: 800px) {
+	.container {
+		background: none;
+		padding-top: 100px;
+		padding-left: 0;
+		margin-left: 50%;
+		max-width: 600px;
+	}
+};
