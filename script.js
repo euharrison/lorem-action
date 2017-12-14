@@ -26,7 +26,9 @@ LoremIpsum.WORDS = [
   'O segredo do sucesso é começar antes de estar pronto.',
   'Viva em busca da masterização e do profissionalismo, every f*ing day.',
   'Felicidade é a nova produtividade.',
-]
+];
+
+LoremIpsum.prototype.punctuate = function(sentence) { return sentence; }
 
 var loremIpsum = new LoremIpsum();
 var amount = document.getElementById('amount');
