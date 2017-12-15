@@ -3,6 +3,7 @@ body {
   min-height: 100vh;
   font-family: Lato, sans-serif;
   font-size: 14px;
+  line-height: 1.7;
   color: #1f1834;
 }
 
@@ -28,7 +29,7 @@ h1 {
 }
 
 h2 {
-  margin: 22px 0 30px;
+  margin: 22px 0;
   font-size: 14px;
   font-weight: bold;
   text-align: center;
@@ -118,6 +119,20 @@ h2 {
   height: 200px;
   padding: 10px;
   overflow: auto;
+}
+
+.about {
+  font-size: 18px;
+  letter-spacing: 0.2px;
+  color: #1f1834;
+  margin: 100px 0;
+  padding: 0 2px;
+}
+
+.disclaimer {
+  opacity: 0.6;
+  text-align: center;
+  color: #1f1834;
 }
 
 @media (min-width: 800px) {
