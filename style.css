@@ -122,11 +122,23 @@ h2 {
   fill: #fff;
 }
 
+.generate:active,
+.generate:active .inner,
+.copy:active {
+  background: black;
+}
+
 .output {
+  font-size: 14px;
+  line-height: 1.4;
   min-height: 200px;
   height: 30vh;
   padding: 10px;
-  overflow: auto;
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  resize: none;
 }
 
 .about {
@@ -150,6 +162,7 @@ h2 {
 @media (min-width: 1200px) {
   body {
     display: flex;
+    font-size: 16px;
   }
 
   .person {
@@ -191,6 +204,10 @@ h2 {
 
   .generate .inner {
     height: 32px;
+  }
+
+  .output {
+    font-size: 16px;
   }
 
   .about {

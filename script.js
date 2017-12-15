@@ -36,5 +36,7 @@ var output = document.getElementById('output');
 
 document.getElementById('generate').addEventListener('click', function() {
   var text = loremIpsum.generate(amount.value);
-  output.textContent = text;
+  output.value = text;
 });
+
+new Clipboard('#copy');
