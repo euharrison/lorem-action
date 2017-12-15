@@ -37,11 +37,13 @@ h2 {
   font-weight: bold;
   text-align: center;
   letter-spacing: 0.5px;
+  text-transform: uppercase;
 }
 
 .box {
-  border-radius: 2px;
+  border-radius: 4px;
   border: solid 1px #1f1834;
+  overflow: hidden;
 }
 
 .header {
@@ -57,11 +59,16 @@ h2 {
   align-items: stretch;
 }
 
+.amount,
+.generate,
+.copy {
+  border: solid 1px #1f1834;
+}
+
 .amount {
   outline: none;
   width: 45px;
   border-radius: 3px;
-  border: solid 1px #1f1834;
   font-weight: bold;
   letter-spacing: 0.7px;
   text-align: center;
@@ -73,7 +80,6 @@ h2 {
 .generate,
 .copy {
   outline: none;
-  border: none;
   padding: 0;
   cursor: pointer;
   width: 100px;
@@ -87,7 +93,6 @@ h2 {
 }
 
 .generate {
-  border: solid 1px #1f1834;
   background: linear-gradient(to bottom, #ff0000, #cc0000);
 }
 
@@ -102,14 +107,13 @@ h2 {
 }
 
 .copy {
-  border: none;
   width: 96px;
   background-color: #dbdbdb;
   margin-left: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 8px 0 10px;
+  padding: 0 6px 0 10px;
 }
 
 .copy .icon {
@@ -151,16 +155,46 @@ h2 {
   .person {
     position: fixed;
     height: 100vh;
-    width: 50vw;
+    width: 55vw;
   }
 
   .container {
-    margin-left: calc(75vw - 180px);
+    margin-left: calc(77.5vw - 180px);
     padding: 10vh 0;
+  }
+
+  h1 {
+    font-size: 88px;
+  }
+
+  h2 {
+    font-size: 16px;
+  }
+
+  .header {
+    height: 40px;
+  }
+
+  .box {
+    border-width: 2px;
+  }
+
+  .amount,
+  .generate,
+  .copy {
+    border-width: 2px;
   }
 
   .generate {
     width: 160px;
+  }
+
+  .generate .inner {
+    height: 32px;
+  }
+
+  .about {
+    margin: 80px 0;
   }
 
   .desktop {
