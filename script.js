@@ -32,9 +32,9 @@ LoremIpsum.prototype.punctuate = function(sentence) { return sentence; }
 
 var loremIpsum = new LoremIpsum();
 var amount = document.getElementById('amount');
-var content = document.getElementById('content');
+var output = document.getElementById('output');
 
 document.getElementById('generate').addEventListener('click', function() {
   var text = loremIpsum.generate(amount.value);
-  content.textContent = text;
+  output.textContent = text;
 });

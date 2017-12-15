@@ -1,55 +1,131 @@
 body {
-	margin: 0;
-	min-height: 100vh;
-	font-family: Helvetica, Arial, sans-serif;
-	font-size: 16px;
-	background-image: url('./background.jpg');
-	background-position: left 15% center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
+  margin: 0;
+  min-height: 100vh;
+  font-family: Lato, sans-serif;
+  font-size: 14px;
+  color: #1f1834;
+}
+
+.person {
+  height: 340px;
+  background-image: url('./person.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .container {
-	background: rgba(255, 255, 255, 0.9);
-	min-height: 100vh;
-	box-sizing: border-box;
-	padding: 50px;
+  padding: 32px 28px;
+}
+
+h1 {
+  margin: 0;
+  font-family: "avebury-black", sans-serif;
+  font-size: 62px;
+  font-weight: 900;
+  line-height: 0.87;
+  text-align: center;
+}
+
+h2 {
+  margin: 22px 0 30px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+.box {
+  border-radius: 2px;
+  border: solid 1px #1f1834;
+}
+
+.header {
+  height: 30px;
+  border-radius: 4px;
+  background-color: #f4f4f4;
+  border-style: solid;
+  border-width: 2px;
+  border-image-source: linear-gradient(to bottom, #f4f4f4, #dbdbdb);
+  border-image-slice: 1;
+  padding: 5px 6px;
+  display: flex;
+  align-items: stretch;
 }
 
 .amount {
-	outline: none;
-	font-size: 14px;
-	width: 40px;
-	padding: 2px 5px;
-	background-color: white;
-	border: 1px solid black;
+  outline: none;
+  width: 45px;
+  border-radius: 3px;
+  border: solid 1px #1f1834;
+  font-weight: bold;
+  letter-spacing: 0.7px;
+  text-align: center;
+  color: #1f1834;
+  box-sizing: border-box;
+  margin-right: 6px;
+}
+
+.generate,
+.copy {
+  outline: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  width: 100px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: normal;
+  letter-spacing: 0.6px;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
 }
 
 .generate {
-	outline: none;
-	border: none;
-	cursor: pointer;
-	background-color: black;
-	padding: 15px 20px;
-	color: white;
-	font-size: 14px;
+  border: solid 1px #1f1834;
+  background: linear-gradient(to bottom, #ff0000, #cc0000);
 }
 
-.generate:hover {
-	color: white;
+.generate .inner {
+  height: 24px;
+  background: #ff0000;
+  margin: 2px;
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.content {
-	margin-top: 40px;
+.copy {
+  border: none;
+  width: 96px;
+  background-color: #dbdbdb;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 8px 0 10px;
+}
+
+.copy .icon {
+  height: 18px;
+  width: auto;
+  fill: #fff;
+}
+
+.output {
+  height: 200px;
+  padding: 10px;
+  overflow: auto;
 }
 
 @media (min-width: 800px) {
-	.container {
-		background: none;
-		padding-top: 100px;
-		padding-left: 0;
-		margin-left: 50%;
-		max-width: 600px;
-	}
+  .container {
+    background: none;
+    padding-top: 100px;
+    padding-left: 0;
+    margin-left: 50%;
+    max-width: 600px;
+  }
 };
