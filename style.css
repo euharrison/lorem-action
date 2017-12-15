@@ -8,7 +8,7 @@ body {
 }
 
 .person {
-  height: 340px;
+  height: 80vw;
   background-image: url('./person.jpg');
   background-position: center;
   background-repeat: no-repeat;
@@ -17,6 +17,9 @@ body {
 
 .container {
   padding: 32px 28px;
+  max-width: 360px;
+  box-sizing: border-box;
+  margin: auto;
 }
 
 h1 {
@@ -116,7 +119,8 @@ h2 {
 }
 
 .output {
-  height: 200px;
+  min-height: 200px;
+  height: 30vh;
   padding: 10px;
   overflow: auto;
 }
@@ -135,12 +139,31 @@ h2 {
   color: #1f1834;
 }
 
-@media (min-width: 800px) {
+.desktop {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  body {
+    display: flex;
+  }
+
+  .person {
+    position: fixed;
+    height: 100vh;
+    width: 50vw;
+  }
+
   .container {
-    background: none;
-    padding-top: 100px;
-    padding-left: 0;
-    margin-left: 50%;
-    max-width: 600px;
+    margin-left: calc(75vw - 180px);
+    padding: 10vh 0;
+  }
+
+  .generate {
+    width: 160px;
+  }
+
+  .desktop {
+    display: initial;
   }
 };
