@@ -1,0 +1,4 @@
+
+# Redirect when url has www
+RewriteCond %{HTTP_HOST} ^www.loremaction.com$ [NC]
+RewriteRule ^(.*)$ http://loremaction.com/$1 [R=301,L]
