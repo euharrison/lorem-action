@@ -75,6 +75,7 @@ h2 {
   color: #1f1834;
   box-sizing: border-box;
   margin-right: 6px;
+  font-family: inherit;
 }
 
 .generate,
@@ -139,6 +140,7 @@ h2 {
   border: none;
   outline: none;
   resize: none;
+  font-family: inherit;
 }
 
 .about {
